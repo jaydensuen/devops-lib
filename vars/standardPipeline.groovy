@@ -30,7 +30,7 @@ def call(Map config = [:]) {
 
             stage('4. GitOps 自动回写 (核心核心核心)') {
                 steps {
-                    container('base') {
+//                    container('base') {
                         // 使用你刚才在 Jenkins 创建的凭据 ID: github-token
                         withCredentials([string(credentialsId: 'github-token', variable: 'GITHUB_TOKEN')]) {
                             script {
@@ -61,7 +61,7 @@ def call(Map config = [:]) {
                                 """
                             }
                         }
-                    }
+                   // }
                 }
             }
         }
