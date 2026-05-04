@@ -57,7 +57,7 @@ def call(Map config = [:]) {
                                     # 提交并推送
                                     git add .
                                     git commit -m "chore: 自动化上线 - 版本更新为 ${imageTag} [skip ci]"
-                                    git push origin master
+                                    git push origin main
                                 """
                             }
                         }
