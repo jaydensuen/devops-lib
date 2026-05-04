@@ -10,7 +10,7 @@ def call(Map config = [:]) {
             stage('1. 环境初始化') {
                 steps {
                     echo "正在启动流水线: ${appName}"
-                    checkout scm
+                  //  checkout scm
                 }
             }
 
